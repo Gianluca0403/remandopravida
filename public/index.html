@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav>
+         <div class="nav-logo">
+
+            <a href="#">
+                <img  src="img/Copilot_20250608_202533.png">
+            </a>
+            
+        </div>
+
+
+         <ul class="nav-links">
+            <li class="links"><a href="#">Sobre nós</li>
+            <li class="links"><a href="#header-carac">Caracteristicas</a></li>
+            <li class="links"><a href="#header-feedback">Feedback</a></li>
+            
+         </ul>
+
+         <button class="btn" onclick="window.open('login.html', '_blank')">Login</button>
+
+
+    </nav>
+
+    <header class="container">
+
+        <div class="conteudo">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            
+            <H1>PATH OF CODE</H1>
+            <p>
+                Path of code surge, uma ideia de tcc de 4 jovens com a intenção de ajudar aqueles que querem entrar na area de programação de um jeito, simples e divertido.
+                A ideia surgiu ao ver tanta gente querendo entrar no mundo da tecnologia, mas travando logo nos primeiros passos. Por isso, criamos um material pensado especialmente
+                 para quem está começando do zero – com explicações claras, exemplos do dia a dia e muitos exercícios práticos
+            </p>
+            <button class="btn">Iniciar</button>   
+        </div>
+     
+            <div class="imagem">
+
+                 <img  src="img/Copilot_20250608_202533.png">
+
+            </div>
+    </header>
+
+    <section class="container">
+
+        <h2 id="header-carac">Nossas Caracteristicas</h2>
+        
+        <div class="caracteristicas">
+            <div class="card">
+                
+                <h4>ENSINO PRATICO</h4>
+                <p>
+                    Ensinamos programação de um jeito pratico, facil e divertido , com ensinamentos baseados no curso Tecnico Desenvolvimento de Sistemas.
+                </p>
+                <a href="#">Clique aqui <i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <div class="card">
+                
+                <h4>JOGO INTERATIVO</h4>
+                <p>
+                    Aqui voce pode aprender, enquanto se diverte, em um jogo interativo e divertido, com desafios cada vez maiores , com bosses e inimigos interativos.
+                    
+                </p>
+                <a href="#">Clique aqui <i class="ri-arrow-right-line"></i></a>
+
+            </div>
+
+             <div class="card">
+                
+                <h4>MODO CODE</h4>
+                <p>
+                    No path of code, voce aprender a codar jogando, desenvolvemos o mode code, um sistema que compara seu codigo, com um codigo funcional, e te da feedbacks sobre
+                    
+                </p>
+                <a href="#">Clique aqui <i class="ri-arrow-right-line"></i></a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="container">
+    <h2 id="header-feedback">Deixe seu Feedback</h2>
+    <form id="feedback-form">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu e-mail" required>
+        <textarea id="feedback" rows="5" placeholder="Escreva seu feedback aqui..." required></textarea>
+        <button class="btn" type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <div class="container footer-conteudo">
+        <p>&copy; 2025 Path of Code. Todos os direitos reservados.</p>
+        <p>Feito com por alunos do curso Técnico em Desenvolvimento de Sistemas</p>
+    </div>
+</footer>
+        
+<script src="front.js"></script>
+</body>
+</html>

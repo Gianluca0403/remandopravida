@@ -1,0 +1,97 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #18181B, #1f1f23);
+      color: #fff;
+    }
+
+    .login-page {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .login-container {
+      background-color: #1c1c1f;
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .login-container input {
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid #444;
+      background-color: #2c2c2f;
+      color: #fff;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .login-container input:focus {
+      outline: none;
+      border-color: #1e40ef;
+      background-color: #1e1e21;
+      box-shadow: 0 0 10px #1e40ef60;
+    }
+
+    .login-container input::placeholder {
+      color: #aaa;
+    }
+
+    .login-container button {
+      padding: 1rem;
+      border-radius: 10px;
+      background-color: #8c4bc9;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      transition: 0.3s;
+    }
+
+    .login-container button:hover {
+      background-color: #1e40ef;
+      box-shadow: 0 0 10px #1e40ef90;
+    }
+
+    .login-msg {
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    .login-msg a {
+      color: #8c4bc9;
+      text-decoration: none;
+    }
+
+    .login-msg a:hover {
+      color: #1e40ef;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 500px) {
+      .login-container {
+        padding: 2rem 1.5rem;
+      }
+    }
