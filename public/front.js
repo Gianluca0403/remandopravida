@@ -1,24 +1,24 @@
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('feedback-form').addEventListener('submit', async function (e) {
-    e.preventDefault();
+document.querySelectorAll(".carousel-premium").forEach((carousel) => {
+    let index = 0;
+    const slides = carousel.querySelectorAll(".carousel-slide");
+    const dots = carousel.querySelectorAll(".dot-premium");
+    const prev = carousel.querySelector(".prev-premium");
+    const next = carousel.querySelector(".next-premium");
 
-    const nome = document.getElementById("nome").value;
-    const email = document.getElementById("email").value;
-    const feedback = document.getElementById("feedback").value;
+    function showSlide(n) {
+        index = (n + slides.length) % slides.length;
 
-    try {
-      const resposta = await fetch('http://localhost:3000/contato', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome, email, feedback })
-      });
+        slides.forEach(s => s.classList.remove("active"));
+        dots.forEach(d => d.classList.remove("active"));
 
-      const result = await resposta.json();
-      alert(result.mensagem);
-      this.reset();
-    } catch (erro) {
-      alert("Erro ao enviar feedback");
-      console.error(erro);
+        slides[index].classList.add("active");
+        dots[index].classList.add("active");
     }
-  });
+
+    prev.addEventListener("click", () => showSlide(index - 1));
+    next.addEventListener("click", () => showSlide(index + 1));
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener("click", () => showSlide(i));
+    });
 });
