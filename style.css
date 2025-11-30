@@ -57,6 +57,13 @@ nav{
     cursor: pointer;
     transition: all 0.3s ease;
     color: #fff;
+
+}
+
+.btn a{
+
+    color: white;
+
 }
 
 .btn:hover{
