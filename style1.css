@@ -1,4 +1,4 @@
-/* RESET */ 
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     color: #333;
 }
 
-/* HEADER MODERNO */
+
 .header {
     width: 100%;
     background: #b60000; /* vermelho */
@@ -22,7 +22,7 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
-/* conteúdo */
+
 .header .container {
     max-width: 1200px;
     margin: auto;
@@ -32,7 +32,7 @@ body {
     align-items: center;
 }
 
-/* LOGO */
+
 .logo {
     display: flex;
     align-items: center;
@@ -58,7 +58,7 @@ body {
     text-transform: uppercase;
 }
 
-/* MENU */
+
 .nav ul {
     display: flex;
     gap: 30px;
@@ -73,7 +73,7 @@ body {
     position: relative;
 }
 
-/* linha premium animada */
+
 .nav ul li a::after {
     content: "";
     width: 0%;
@@ -94,7 +94,7 @@ body {
     opacity: 0.8;
 }
 
-/* HAMBÚRGUER (mobile) */
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -110,7 +110,6 @@ body {
     transition: 0.3s;
 }
 
-/* MOBILE */
 @media (max-width: 860px) {
     .nav {
         position: absolute;
@@ -140,7 +139,7 @@ body {
 }
 
 
-/* HERO */
+
 .hero {
     text-align: center;
     padding: 80px 20px;
@@ -158,7 +157,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* PRODUTOS */
+
 .products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -197,7 +196,7 @@ body {
     margin-bottom: 12px;
 }
 
-/* BOTÃO */
+
 .buy-btn {
     background: #b4000f; /* vermelho */
     border: none;
@@ -215,7 +214,7 @@ body {
 }
 
 
-/* ====== SLIDER PREMIUM ====== */
+
 .slider {
     position: relative;
     width: 100%;
@@ -269,7 +268,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* Fade + Slide Up Text */
+
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -281,7 +280,7 @@ body {
     }
 }
 
-/* ====== SETAS ====== */
+
 .slider-controls button {
     position: absolute;
     top: 50%;
@@ -424,7 +423,7 @@ body {
 }
 
 
-/* ÍCONE DO CARRINHO */
+
 .cart-icon {
     position: fixed;
     top: 25px;
@@ -474,7 +473,7 @@ body {
     right: 0;
 }
 
-/* HEADER DO CARRINHO */
+
 .cart-header {
     display: flex;
     justify-content: space-between;
@@ -493,7 +492,7 @@ body {
     cursor: pointer;
 }
 
-/* ITENS DO CARRINHO */
+
 .cart-items {
     flex: 1;
     overflow-y: auto;
@@ -512,7 +511,7 @@ body {
     font-size: 1rem;
 }
 
-/* BOTÃO FINALIZAR */
+
 .finish-btn {
     background: #b4000f;
     color: #fff;
