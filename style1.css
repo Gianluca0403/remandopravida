@@ -246,9 +246,11 @@ body {
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain; /* garante que a imagem caiba inteira */
+    background: #000;    /* fundo para imagens menores */
     filter: brightness(70%);
 }
+
 
 .slide-text {
     position: absolute;
