@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Loja</title>
+    <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/Logo.png" alt="logo">
+             <h1>Remando Pra Vida</h1>
+            </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+    </header>
+
+
+    <section class="slider">
+    <div class="slides">
+
+        <!-- Imagens ilustrativas -->
+        <div class="slide active">
+            <img src="img/moletom.webp" alt="Banner 1">
+            <div class="slide-text">
+                <h2>REMANDO PRA VIDA SHOP</h2>
+                <p>qualidade e estilo</p>
+            </div>
+        </div>
+
+        
+        <div class="slide">
+            <img src="img/camisa.jpeg" alt="Banner 2">
+            <div class="slide-text">
+                <h2>CAMISETAS</h2>
+                <p>Camitas com design unico</p>
+            </div>
+        </div>
+
+       
+        <div class="slide">
+            <img src="img/shapes.webp" alt="Banner 3">
+            <div class="slide-text">
+                <h2>SHAPES</h2>
+                <p>Shapes unicos.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="slider-controls">
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </div>
+
+    <div class="dots"></div>
+</section>
+
+
+    <section class="hero-mini">
+    <span class="tag">Nossos Produtos</span>
+    <h2>Estilo que acompanha sua remada</h2>
+    </section>
+
+    <section class="products">
+        <div class="product">
+            <img src="img/shapes.webp" alt="Produto 1">
+            <h3>SHAPES</h3>
+            <p class="price">R$ 79,90</p>
+            <button class="buy-btn">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="img/camisa.jpeg" alt="Produto 2">
+            <h3>CAMISA</h3>
+            <p class="price">R$ 129,90</p>
+            <button class="buy-btn">Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="img/moletom.webp" alt="Produto 3">
+            <h3>MOLETOM</h3>
+            <p class="price">R$ 99,90</p>
+            <button class="buy-btn">Comprar</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Remando Pra Vida — Todos os direitos reservados.</p>
+
+        <div class="social-icons">
+            <a href="https://wa.me/556699234563" target="_blank" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            </a>
+
+            <a href="https://www.instagram.com/remandoparavida" target="_blank" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+    </footer>
+
+
+
+    
+    <div class="cart-icon">
+    🛒 <span class="cart-count">0</span>
+    </div>
+
+    <!-- PAINEL LATERAL DO CARRINHO -->
+    <div class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+        <h2>Seu Carrinho</h2>
+        <button id="closeCart">✕</button>
+        </div>
+
+    <div class="cart-items"></div>
+
+        <button class="finish-btn">Finalizar no WhatsApp</button>
+
+    </div>
+
+
+
+    <script src="loja.js"></script>
+</body>
+</html>
